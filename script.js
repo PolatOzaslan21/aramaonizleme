@@ -42,9 +42,6 @@ function update() {
   titleStatus.className = 'status-badge ' + tc;
   descStatus.className = 'status-badge ' + dc;
 
-  const tLabel = {ok:'✅ Title ideal', warn:'⚠️ Title kısa', bad:'❌ Title uzun', '':—:'Title: —'};
-  const dLabel = {ok:'✅ Desc ideal', warn:'⚠️ Desc kısa', bad:'❌ Desc uzun', '':—:'Desc: —'};
-
   titleStatus.textContent = tc === 'ok' ? '✅ Title ideal' : tc === 'warn' ? '⚠️ Title kısa' : tc === 'bad' ? '❌ Title uzun' : 'Title: —';
   descStatus.textContent = dc === 'ok' ? '✅ Desc ideal' : dc === 'warn' ? '⚠️ Desc kısa' : dc === 'bad' ? '❌ Desc uzun' : 'Desc: —';
 
